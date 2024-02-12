@@ -17,8 +17,8 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
-  access_key = "AKIAU6GDUM7O2TUIJNGV"
-  secret_key = "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"
+  access_key = "AWS_ACCESS_KEY_ID"
+  secret_key = "AWS_SECRET_ACCESS_KEY"
 }
 
 resource "random_pet" "sg" {}
