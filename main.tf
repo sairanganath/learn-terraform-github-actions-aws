@@ -16,7 +16,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1a"
+  region = "205-237-58.ap-south-1.compute"
 }
 
 resource "random_pet" "sg" {}
