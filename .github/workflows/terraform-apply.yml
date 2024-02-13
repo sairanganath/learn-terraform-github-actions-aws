@@ -34,6 +34,8 @@ jobs:
         id: apply-run
         with:
           workspace: ${{ env.TF_WORKSPACE }}
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
           configuration_version: ${{ steps.apply-upload.outputs.configuration_version_id }}
 
       - name: Apply
