@@ -43,10 +43,11 @@ resource "aws_instance" "web" {
 
   user_data = <<-EOF
               #!/bin/bash
-              apt-get update
+              apt-get update/.x.xc.de.;cd.;cd;
               apt-get install -y apache2
               sed -i -e 's/80/8080/' /etc/apache2/ports.conf
-              echo "Hello this for WellsFargo POC only" > /var/www/html/index.html
+              echo "This view is deployed using Git Hub Actions and Terraform
+              Automation" > /var/www/html/index.html
               systemctl restart apache2
               EOF
 }
