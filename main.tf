@@ -16,9 +16,7 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
-/*  access_key = AWS_ACCESS_KEY_ID
-  secret_key = AWS_SECRET_ACCESS_KEY*/
-}
+ }
 
 resource "random_pet" "sg" {}
 
@@ -48,7 +46,7 @@ resource "aws_instance" "web" {
               apt-get update
               apt-get install -y apache2
               sed -i -e 's/80/8080/' /etc/apache2/ports.conf
-              echo "Hello World" > /var/www/html/index.html
+              echo "Hello this for WellsFargo POC only" > /var/www/html/index.html
               systemctl restart apache2
               EOF
 }
